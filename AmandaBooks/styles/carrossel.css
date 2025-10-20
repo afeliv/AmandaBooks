@@ -1,0 +1,237 @@
+.carrosel_titulo { 
+    color: var(--cor-4);
+    background-color: var(--cor-1);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.125em;;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-container {
+  width: 90%;            /* ocupa 90% da largura da tela */
+  margin: 0 auto;        /* centraliza horizontalmente */
+  overflow: hidden;      /* evita que imagens "saiam" da área visível */
+  padding: 0 1.5em;
+}
+.swiper-slide  {
+    height: 100%;
+    display:flex;
+    padding: 0.5em 0 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius:1.5em;
+    overflow: hidden;
+}
+.swiper-slide img {
+    max-height: 150px;
+    width: auto;
+    border-radius:1em;
+
+}
+
+.swiper-slide img:hover {
+box-shadow: 1px 2px 2px 2px var(--cor-6);
+
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: var(--cor-4);
+    
+}
+.swiper-pagination {
+position: initial;
+z-index: 10;
+padding: 0.5em;
+
+    
+}
+
+.card_descricao { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card_botoes {
+    display:flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.card {
+    background-color: var(--cor-5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1.5em;
+}
+
+.descricao_titulo {
+    color: var(--cor-1);
+    font-weight: 700;
+    word-wrap: break-word;  /* garante que o texto quebre a linha*/
+    overflow-wrap: break-word;
+
+}
+
+.descricao_titulo-livro {
+    font-weight:700;
+    font-size: 18px;
+    color:var(--cor-2);
+    padding: 0.5em 0;
+    word-wrap: break-word;  /* garante que o texto quebre a linha*/
+    overflow-wrap: break-word;
+}
+
+.descricao_texto {
+    font-size: 14px;
+}
+
+.botoes-item {
+    padding: 0.5em;
+}
+
+.botoes_ancora {
+    background-color: var(--cor-4);
+    padding: 1.8em 1.8em;
+    text-align: center;
+    color: var(--cor-5);
+    font-weight: 300;
+    text-decoration: none;
+    align-items: center;
+}
+
+.card img {
+    padding: 0.1em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+
+@media screen and (min-width:768px){
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .carrosel_titulo {
+        font-size: 1.5em; /* aumenta o tamanho da fonte em telas maiores*/
+    }
+    .swiper-slide img {
+        max-height: 200px; /* aumenta o tamanho da imagem*/
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: block;
+        top: 50%
+    }
+    .swiper-slide {
+        padding: 0em
+    }
+    .card {
+    width: 50%;
+    margin: 2em auto;
+
+    }
+}
+
+@media screen and (min-width:1600px) {
+   .carrosel_titulo {
+    font-size:1.6em;
+    margin-bottom: 1.2em;
+    text-align: center;
+   }
+   .carrossel-container {
+    width: 85%; /* define que o carrossel 85% da largura */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .swiper-container {
+    width: 70%; /* deixa os livros menos espalhados*/
+    margin: 0 auto;
+   }
+   .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+        padding: 0em; /* antes era 1em */ /* controla a distância entre os livros*/
+    }
+    .swiper-slide img {
+        max-height: 220px;
+        width: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* deixa suave quando passa o mouse por cima*/
+    }
+    .swiper-slide img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* quando o usuário passa o mouse, a imagem aumenta levemente e ganha uma sombra mais forte*/
+}
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+        opacity: 1;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    display: block;
+    color: var(--cor-4);
+    top: 90%;
+    opacity: 0.8;
+}
+
+    
+    .swiper-pagination {
+        margin-top: 0.5em;
+        position: static;
+    }
+    .card {
+        width: 55%;
+        margin: 2.5em auto;
+        padding: 2em;
+        border-radius: 12px;
+        text-align: center;
+        background-color: var(--cor-5);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-3px);
+    }
+    .descricao_titulo{
+        font-size: 2rem;
+    }
+    .descricao_titulo-livro {
+        font-size: 1.6rem;
+    }
+
+    .descricao_texto {
+        font-size: 1.5rem;
+        color: var(--cor-1);
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    .botoes_ancora {
+        background-color: var(--cor-4);
+        color: var(--cor-5);
+        padding: 0.8em 2em;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        align-items: center;
+        text-align: center;
+        top:45%
+    }
+
+    .botoes_ancora:hover {
+        background-color: var(--cor-2);
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmandaBooks</title>
+    <link rel="stylesheet" href="styles/reset.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/style.css">   
+    <link rel="stylesheet" href="styles/header.css">      
+    <link rel="stylesheet" href="styles/banner.css">   
+    <link rel="stylesheet" href="styles/carrossel.css">
+    <link rel="stylesheet" href="styles/topicos.css">
+    <link rel="stylesheet" href="styles/contato.css">
+
+</head>
+<body>
+    <header class="cabecalho"> 
+        <div class="container">
+            <input type="checkbox" id="menu" class="container_botao">
+            <label for="menu">
+                <span class="cabecalho__menu container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Frontend</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+
+            </ul>
+            <img src="https://cdn-icons-png.flaticon.com/512/5832/5832416.png" alt="logo" class="container__imagem" width="45px" height="45px">
+            <h1 class="container_titulo"><b class="titulo--negrito">Amanda</b>Books</h1>
+        </div>
+        <ul class="opcoes">
+           
+            <input type="checkbox" id="opcoes-menu" class="opcoes_botao">
+            <label for="opcoes-menu" class="opcoes_link">
+                <li class="opcoes_item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Frontend</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+
+            </ul>
+            <li class="opcoes_item"><a href="#" class="opcoes_link">Favoritos</a> </li>
+            <li class="opcoes_item"><a href="#" class="opcoes_link">Minha estante</a> </li>
+        </ul>
+        <div class="container">
+            <a href="#"> 
+                <img src="img/favoritos.svg" class="container__imagem1"></a>
+            <a class="container-link"href="#"> 
+                <img src="img/compras.svg" class="container__imagem">
+            <a class="container-link1" href="#" ></a> 
+                <img src="img/usuario.svg">
+         </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">A melhor seleção de livros de tecnologia você encontra aqui!</h2>
+        <p class="banner__texto">Confira todos os títulos em livros ou e-books</p>
+        <input type="search" class="banner__pesquisa"
+        placeholder="O que você está buscando?">
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel_titulo">Novos lançamentos</h2>
+        <div class="carrossel-container">
+            <div class="swiper-container">
+                <div class="swiper-pagination"></div>
+                    
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/livro1.jpg" width="150px" alt="Lógica de programação JavaScript"></div>
+                        <div class="swiper-slide"><img src="img/livro2.png" width="150px" alt="Linguagem C">
+                        </div>
+                        <div class="swiper-slide"><img src="img/livro3.png" width="150px" alt="Programador pragmático"></div>
+                        <div class="swiper-slide"><img src="img/livro4.jpg" width="150px" alt="Python"></div>
+                        <div class="swiper-slide"><img src="img/livro5.png" width="150px" alt="Sistemas embarcados"></div>
+                        <div class="swiper-slide"><img src="img/livro6.jpg" width="150px" alt="algoritmos"></div>
+                        <div class="swiper-slide"><img src="img/livro7.jpg" width="150px" alt="algoritmos"></div>
+                        <div class="swiper-slide"><img src="img/livro9.jpg" width="150px" alt="algoritmos"></div>
+                        
+                    </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_descricao">
+                            <div class="descricao">
+                                <h3 class="descricao_titulo">Talvez você também se interesse por..</h3>
+                                <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                                <p class="descricao_texto">Aprenda a desenvolver aplicações web com o framework mais popular do mercado e o banco de dados do Google.</p>
+                            </div>
+                            <img src="img/Angular.svg" alt="Angular e Firebase" class="card__imagem" width="150px">
+                        </div>
+                        <div class="card_botoes">
+                            <ul class="botoes">
+                                <li class="botoes-item"><img src="img/favoritos.svg" alt="favoritar o livro"></li>
+                                <li class="botoes-item"><img src="img/compras.svg" alt="comprar o livro"></li>
+                            </ul>
+
+                            <a href="#" class="botoes_ancora">Saiba mais</a>
+                        </div>
+                    </div>
+            </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos_titulo">Tópicos visitados recentemente</h2>
+        <ul class="topicos_lista">
+            <li class="topicos_item">
+                <a href="#" class="topicos_link"> Android</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link"> Marketing Digital</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Agile</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">HTML e CSS</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Python</a>
+            </li>
+            <li class="topicos_item">
+                <a href="#" class="topicos_link">Java</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <div class="contato-footer">
+        <h2 class="contato_titulo"> Fique por dentro das novidades!</h2>
+        <p class="contato_texto">Atualizações sobre e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu email:" class="contato_email">
+    </section>
+   
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container',  {     //inicializa o swiper
+        spaceBetween: 5, //espaçamento entre os slides
+        loop: true, //faz o carrossel voltar ao início quando chegar no fim
+        slidesPerView: 4,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Torna os pontos clicáveis
+        },
+        navigation: { //ativa o carrossel tornando ele interativo
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+
+</body>
+</html>

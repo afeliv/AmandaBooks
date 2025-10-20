@@ -1,0 +1,148 @@
+.cabecalho__menu {
+    width:24px;
+    height:24px;
+    background-image: url("../img/menu.svg");
+    background-position: 0.5em center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 15px;
+}
+
+.cabecalho {
+    background-color:var(--cor-5);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0.8em;
+}
+
+.lista-menu {
+    display:none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+  
+    
+}
+
+.container input {
+    display:none;
+}
+
+input:checked ~ .lista-menu { display: block } /* Exibe o menu quando estiver checado */
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 0.8em;
+    background-color: var(--cor-5);
+    text-transform: uppercase;
+    
+}
+
+.lista-menu__titulo {
+    color:var(--cor-4);
+    list-style:none;   
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    color: var(--cor-4);
+    text-decoration: none;
+    
+}
+
+.container_titulo {
+    display:none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.container__imagem1 {
+    display: none;
+}
+
+.container-texto {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .container_titulo, .titulo--negrito {
+        font-family: var(--fonte-2);
+        font-size: 1em;
+        display: block;
+    }
+
+    .container_titulo {
+        font-weight: 400;
+    }
+    .titulo--negrito {
+        font-weight: 700;
+    }
+    
+    .opcoes {
+        display:flex;
+       
+
+    }
+    
+    .opcoes_item {
+        padding: 0 1em;
+        text-transform: uppercase;
+         display: block;
+         align-items: left;
+    }
+    .opcoes_link {
+        text-decoration: none;
+        color:var(--cor-4)
+        
+    }
+
+    .container__imagem1 {
+        display: block;
+    }
+
+    .cabecalho__menu {
+        display:none;
+    }
+
+    .opcoes_botao:checked ~ .lista-menu {
+        display:block;
+        width: auto;
+    }
+    
+    .opcoes_botao {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+   
+
+    .container-texto {
+        display: block;
+    }
+    .cabecalho {
+        padding: 0 2em;
+    }
+    .opcoes {
+        margin-right: auto;
+    }
+}

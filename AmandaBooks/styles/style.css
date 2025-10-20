@@ -1,0 +1,25 @@
+@import url("styles/banner.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-color: #E7F2EF;
+    --cor-1-:#A1C2BD;
+    --cor-2:#134686;
+    --fonte-1: 'Poppins', sans-serif;
+    --fonte-2: 'Josefin', sans-serif;
+    --cor-3:#34656D;
+    --cor-4:#201d5a;
+    --cor-5: white;
+    --cor-6:#848f8d;
+}
+
+body {
+    background-color: var(--background-color);
+    --branco: #ffffff;
+    font-family: var(--fonte-1);
+    font-size: 16px;
+    font-weight: 400;
+   
+}
+
