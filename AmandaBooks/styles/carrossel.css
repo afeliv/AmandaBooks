@@ -26,8 +26,7 @@
 .swiper-slide img {
     max-height: 150px;
     width: auto;
-    border-radius:1em;
-
+   
 }
 
 .swiper-slide img:hover {
