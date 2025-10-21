@@ -17,10 +17,9 @@
 .swiper-slide  {
     height: 100%;
     display:flex;
-    padding: 0.5em 0 0 0;
+    padding: 1.5em;
     justify-content: center;
     align-items: center;
-    border-radius:1.5em;
     overflow: hidden;
 }
 .swiper-slide img {
@@ -154,7 +153,7 @@ padding: 0.5em;
     align-items: center;
    }
    .swiper-container {
-    width: 70%; /* deixa os livros menos espalhados*/
+    width: 50%; /* deixa os livros menos espalhados*/
     margin: 0 auto;
    }
    .swiper-slide {
@@ -167,7 +166,7 @@ padding: 0.5em;
     .swiper-slide img {
         max-height: 220px;
         width: auto;
-        border-radius: 10px;
+        border-radius: 1em;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* deixa suave quando passa o mouse por cima*/
     }
